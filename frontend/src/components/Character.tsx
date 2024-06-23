@@ -1,5 +1,5 @@
-export default function Character() {
+export default function Character({name}) {
     return(
-        <>Test</>
+        <li>{name}</li>
     )
 }

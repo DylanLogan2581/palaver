@@ -1,9 +1,14 @@
 import Character from './Character.tsx'
 
 export default function CharactersList() {
+    const characters = [
+        {name: "John"},
+        {name: "Ted"}
+    ]
+
     return (
         <>
-            <Character></Character>
+            {characters.map((character, id) => <Character key={id} name={character.name}></Character>)}
         </>
     )
 }
